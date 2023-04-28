@@ -8,7 +8,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class ConnectionFactory {
 
-	private final DataSource datasource;
+	private DataSource datasource;
 	
 	private final String DATABASE = "hotel";
     private final String URL = "jdbc:mysql://localhost/" + DATABASE + "?useTimeZone=true&serverTimeZone=UTC";
