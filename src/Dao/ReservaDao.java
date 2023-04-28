@@ -130,20 +130,19 @@ public class ReservaDao {
             throw new RuntimeException(e);
       }
     }	
-	private void eliminar(int id) {
-		try {
-        	Statement state = con.createStatement();
-        	state.execute("SET FOREIGN_KEY_CHECKS=0");
-            final PreparedStatement statement = con.prepareStatement("DELETE FROM reservas WHERE id = ?");
+	public void eliminar(int id) {
+		 try {
+	        	
+	            final PreparedStatement statement = con.prepareStatement("DELETE FROM huespedes WHERE id = ?");
 
-            try (statement) {
-                statement.setInt(1, id);
-                statement.execute();
-                state.execute("SET FOREIGN_KEY_CHECKS=1");
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+	            try (statement) {
+	                statement.setInt(1, id);
+	                statement.execute();              
 
+	            }
+	        } catch (SQLException e) {
+	            throw new RuntimeException(e);
+	        }
+	    
 	}
 }

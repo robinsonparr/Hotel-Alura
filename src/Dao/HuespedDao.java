@@ -19,7 +19,7 @@ public class HuespedDao {
 		this.con = con;
 	}
 
-	private void guardar(Huesped huesped) {
+	public void guardar(Huesped huesped) {
 		try {
 			PreparedStatement statement;
 			statement = con.prepareStatement("INSERT INTO HUESPEDES "
