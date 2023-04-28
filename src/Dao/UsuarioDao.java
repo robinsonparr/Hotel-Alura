@@ -8,6 +8,7 @@ import java.sql.SQLException;
 public class UsuarioDao {
 	
 	private Connection con;
+	
 	public UsuarioDao(Connection con) {
 		this.con = con;
 			

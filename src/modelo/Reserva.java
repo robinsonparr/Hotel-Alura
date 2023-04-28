@@ -18,6 +18,7 @@ public class Reserva {
 	}
 
 	public Reserva(int id, LocalDate fechaEntrada, LocalDate fechaSalida, String valor, String formaPago) {
+		super();
 		this.id = id;
 		this.fechaEntrada = fechaEntrada;
 		this.fechaSalida = fechaSalida;

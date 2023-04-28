@@ -37,7 +37,7 @@ public class HuespedController {
 		this.huespedDao.actualizar(nombre, apellido, fechaNacimiento, nacionalidad, telefono, idReserva, id);
 	}
 	
-	public void elimnar(int id) {
+	public void eliminar(int id) {
 		this.huespedDao.elimnar(id);
 	}
 	

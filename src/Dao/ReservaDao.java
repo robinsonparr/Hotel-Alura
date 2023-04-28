@@ -23,7 +23,7 @@ public class ReservaDao {
 		try {
 			PreparedStatement statement;
 			statement = con.prepareStatement(
-					"INSERT INTO RESERVA" + "(fechaEntrada, fechaSalida, valor, formaPago)" + "VALUES (?,?,?,?)",
+					"INSERT INTO RESERVAS" + "(fechaEntrada, fechaSalida, valor, formaPago)" + "VALUES (?,?,?,?)",
 					Statement.RETURN_GENERATED_KEYS);
 
 			try (statement) {
