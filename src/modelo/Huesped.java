@@ -13,8 +13,12 @@ public class Huesped {
 	private int idReserva;
 	
 	
+
+
+
 	public Huesped(int id, String nombre, String apellido, LocalDate fechaNacimiento, String nacionalidad,
 			String telefono, int idReserva) {
+	
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;

@@ -62,13 +62,16 @@ public class ReservaDao {
 				try (resultSet) {
 					while (resultSet.next()) {
 
-					}
-					resultado.add(new Reserva(resultSet.getInt("ID"), resultSet.getDate("fechaEntrada").toLocalDate(),
-							resultSet.getDate("fechaSalida").toLocalDate(), resultSet.getString("Valor"),
+					
+					resultado.add(new Reserva(resultSet.getInt("id"),
+							resultSet.getDate("fechaEntrada").toLocalDate(),
+							resultSet.getDate("fechaSalida").toLocalDate(),
+							resultSet.getString("Valor"),
 							resultSet.getString("formaPago")));
 				}
 			}
-
+	
+			}
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 

@@ -30,7 +30,7 @@ public class HuespedController {
 	
 	
 	public List<Huesped> buscarId(String id){
-		return this.buscarId(id);
+		return this.huespedDao.buscarId(id);
 	}
 	
 	public void actualizar(String nombre, String apellido, LocalDate fechaNacimiento, String nacionalidad, String telefono, int idReserva, int id) {

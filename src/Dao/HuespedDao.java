@@ -50,8 +50,8 @@ public class HuespedDao {
 
 	}
 	
-	public List<Huesped> listar(){
-		List<Huesped> resultado = new ArrayList<Huesped>();
+	public List<Huesped> listar() {
+        List<Huesped> resultado = new ArrayList<Huesped>();
 
         try {
             final PreparedStatement statement = con
@@ -81,13 +81,13 @@ public class HuespedDao {
         }
 
         return resultado;
-	}
+    }
 	public List<Huesped> buscarId(String id){
 		List<Huesped> resultado = new ArrayList<Huesped>();
 
         try {
             final PreparedStatement statement = con
-                    .prepareStatement("SELECT id, nombre, apellido, fechanNacimiento, nacionalidad, telefono, idReserva FROM huespedes WHERE id =?");
+                    .prepareStatement("SELECT id, nombre, apellido, fechaNacimiento, nacionalidad, telefono, idReserva FROM huespedes WHERE id =?");
     
             try (statement) {
             	statement.setString(1, id);
